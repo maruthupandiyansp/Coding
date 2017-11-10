@@ -14,7 +14,7 @@ package analysisofalgorthims.Chapter1;
 public class Sorting1_1_4 {
     //int[] unsortedArray = {23, 45, 12, 37, 11};
     
-    protected void sortArrayBruteForce (int[] unsortedArray){
+    public void sortArrayBruteForce (int[] unsortedArray){
         int count=0;
         int aryLen = unsortedArray.length;
         // 2 for loops to run through array twice to sort them

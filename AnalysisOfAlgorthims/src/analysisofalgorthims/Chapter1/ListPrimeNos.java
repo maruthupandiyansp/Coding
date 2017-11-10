@@ -15,7 +15,7 @@ public class ListPrimeNos {
     int[] primeNos = new int[350];
     int n;
     int count;
-    protected void findPrime (int a){
+    public void findPrime (int a){
         int j=0;
         count=1;
         try {
@@ -59,7 +59,7 @@ public class ListPrimeNos {
     * number which is > number / 2.
     * To find all the PrimeNo till 50, it takes 197 recursive in for loop
     */
-    protected void efficientFindPrime (int a){
+    public void efficientFindPrime (int a){
         int j=0;
         count=0;
         try {

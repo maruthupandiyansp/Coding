@@ -11,7 +11,7 @@ package analysisofalgorthims.Chapter1;
  */
 public class Euclid_GCD_HCF {
     int m, n;
-    protected void findGCD (int a, int b){
+    public void findGCD (int a, int b){
         m=a;
         n=b;
         int j=0;

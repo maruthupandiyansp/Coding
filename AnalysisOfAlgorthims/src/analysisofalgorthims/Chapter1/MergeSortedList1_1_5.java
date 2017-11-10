@@ -13,7 +13,7 @@ public class MergeSortedList1_1_5 {
     int[] firstList = {2, 5}; //, 7, 12, 13, 24};
     int[] secondList = {1, 6}; //, 15, 17, 35};
     
-    protected void mergeSortedList (){
+    public void mergeSortedList (){
         int i=0,j=0,k=0;
         int n=firstList.length+secondList.length;
         System.out.println("n is "+n);
@@ -41,7 +41,7 @@ public class MergeSortedList1_1_5 {
             System.out.println(mergedList[m] +" ");
         }
     }
-    protected void mergeSortedListFor (){
+    public void mergeSortedListFor (){
         int i=0,j=0,k=0;
         int n=firstList.length+secondList.length;
         System.out.println("n is "+n);
