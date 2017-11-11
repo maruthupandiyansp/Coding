@@ -62,38 +62,5 @@ public class MergeSortedList1_1_5 {
         
         Sorting1_1_4 sort = new Sorting1_1_4();
         sort.sortArrayBruteForce(mergedList);
-        /*
-        for (i=0; i < firstList.length; i++){
-            System.out.println("i="+i+" j="+j+" k="+k);
-            System.out.println("firstList["+i+"]="+firstList[i]);
-            System.out.println("secondList["+j+"]="+secondList[j]);
-            //for (;j<secondList.length; j++){
-            if (j!=(secondList.length)){
-                while (j < secondList.length){
-                    System.out.println("i="+i+" j="+j+" k="+k);
-                    System.out.println("firstList["+i+"]="+firstList[i]);
-                    System.out.println("secondList["+j+"]="+secondList[j]);
-                    if (firstList[i] > secondList[j]){
-                        mergedList[k]=secondList[j];
-                    } else {
-                        mergedList[k]=firstList[i];
-                        if (j!=(secondList.length-1))
-                            j++;
-                        k++;
-                        break;
-                    }
-                    System.out.println("mergedList["+k+"]="+mergedList[k]);
-                    j++;
-                    k++;
-                }
-            } else {
-                mergedList[k]=firstList[i];
-                k++;
-            }
-        }
-        
-        for (int m=0; m<mergedList.length; m++){
-            System.out.println(mergedList[m] +" ");
-        }*/
     }
 }
