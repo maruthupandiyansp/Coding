@@ -37,12 +37,14 @@ public class Sorting1_1_4 {
                 break;
             }
         }
+        System.out.println();
         System.out.println("Total number of loops for array length " + aryLen + " is " + count);
+        System.out.println("Sorted List:");
         for (int k = 0; k < aryLen; k++) {
             //System.out.println("Element of Array at ["+k+"] is "+unsortedArray[k]);
             System.out.print(unsortedArray[k] + " ");
         }
 
-        System.out.println("");
+        System.out.println();
     }
 }

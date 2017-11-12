@@ -46,7 +46,7 @@ public class MergeSortedList1_1_5 {
     public void mergeSortedListFor() {
         int i = 0, j = 0, k = 0;
         int n = firstList.length + secondList.length;
-        System.out.println("n is " + n);
+        System.out.println("No of total elements are " + n);
         int[] mergedList = new int[n];
         for (i = 0; i < firstList.length; i++) {
             mergedList[i] = firstList[i];
@@ -55,11 +55,12 @@ public class MergeSortedList1_1_5 {
         for (j = 0; j < secondList.length; j++) {
             mergedList[(firstList.length+j)]=secondList[j];
         }
-
+        System.out.println();
+        System.out.println("Merged List but not sorted yet");
         for (int m = 0; m < mergedList.length; m++) {
-            System.out.println(mergedList[m] + " ");
+            System.out.print(mergedList[m] + " ");
         }
-        
+        System.out.println();
         Sorting1_1_4 sort = new Sorting1_1_4();
         sort.sortArrayBruteForce(mergedList);
     }
