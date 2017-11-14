@@ -11,6 +11,7 @@ import analysisofalgorthims.Chapter1.Euclid_GCD_HCF;
 import analysisofalgorthims.Chapter1.ListPrimeNos;
 import analysisofalgorthims.Chapter1.MergeSortedList1_1_5;
 import analysisofalgorthims.Chapter1.Sorting1_1_4;
+import analysisofalgorthims.DiceGame.DiceGame;
 
 /**
  *
@@ -33,8 +34,10 @@ public class MP_AlgorithmsMain {
         int[] unsortedArray = {23, 45, 65, 78, 45, 12, 37, 10987, 11, 123, 8, 4, 87, 97, 6, 42, 1, 11111};
         //int[] unsortedArray = {23, 45, 12};
         Sorting1_1_4 sort = new Sorting1_1_4();
-        sort.sortArrayBruteForce(unsortedArray);*/
+        sort.sortArrayBruteForce(unsortedArray);
         MergeSortedList1_1_5 merge = new MergeSortedList1_1_5();
-        merge.mergeSortedListFor();
+        merge.mergeSortedListFor();*/
+        DiceGame oDice = new DiceGame();
+        oDice.gameController ();
     }
 }
