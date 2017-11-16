@@ -11,6 +11,7 @@ import analysisofalgorthims.Chapter1.Euclid_GCD_HCF;
 import analysisofalgorthims.Chapter1.ListPrimeNos;
 import analysisofalgorthims.Chapter1.MergeSortedList1_1_5;
 import analysisofalgorthims.Chapter1.Sorting1_1_4;
+import analysisofalgorthims.Chapter2.BinaryNumbers;
 import analysisofalgorthims.DiceGame.DiceGame;
 
 /**
@@ -23,6 +24,9 @@ public class MP_AlgorithmsMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        BinaryNumbers oBinNum = new BinaryNumbers ();
+        //oBinNum.noOfBinaryDigits(1000000000);
+        oBinNum.calcBinaryNo(100);
         // TODO code application logic here
         /*int a=65;
         int b=160;
@@ -36,8 +40,8 @@ public class MP_AlgorithmsMain {
         Sorting1_1_4 sort = new Sorting1_1_4();
         sort.sortArrayBruteForce(unsortedArray);
         MergeSortedList1_1_5 merge = new MergeSortedList1_1_5();
-        merge.mergeSortedListFor();*/
+        merge.mergeSortedListFor();
         DiceGame oDice = new DiceGame();
-        oDice.gameController ();
+        oDice.gameController ();*/
     }
 }
