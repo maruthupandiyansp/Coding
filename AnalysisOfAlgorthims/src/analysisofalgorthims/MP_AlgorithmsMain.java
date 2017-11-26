@@ -12,6 +12,7 @@ import analysisofalgorthims.Chapter1.ListPrimeNos;
 import analysisofalgorthims.Chapter1.MergeSortedList1_1_5;
 import analysisofalgorthims.Chapter1.Sorting1_1_4;
 import analysisofalgorthims.Chapter2.BinaryNumbers;
+import analysisofalgorthims.Chapter2.Fibonacci;
 import analysisofalgorthims.Chapter2.MatrixMultiplication;
 import analysisofalgorthims.Chapter2.UniqueElementsArray;
 import analysisofalgorthims.DiceGame.DiceGame;
@@ -26,10 +27,14 @@ public class MP_AlgorithmsMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int[] unsortedArray = {23, 45, 65, 78, 45, 12, 37, 10987, 11, 123, 8, 4, 87, 97, 6, 42, 1, 11111};
         MatrixMultiplication oMM = new MatrixMultiplication();
-        oMM.mulMatrix();
-        /*UniqueElementsArray oUEA = new UniqueElementsArray (unsortedArray);
+        oMM.getInputMatrix();
+        /*Fibonacci oFib = new Fibonacci ();
+        System.out.println("Fibonacci: "+ oFib.calcFibonacci (50));
+        System.out.println("Looped through: "+oFib.getCount());
+        int[] unsortedArray = {23, 45, 65, 78, 45, 12, 37, 10987, 11, 123, 8, 4, 87, 97, 6, 42, 1, 11111};
+        
+        UniqueElementsArray oUEA = new UniqueElementsArray (unsortedArray);
         oUEA.isArrayUnique(unsortedArray);
         BinaryNumbers oBinNum = new BinaryNumbers ();
         //oBinNum.noOfBinaryDigits(1000000000);
