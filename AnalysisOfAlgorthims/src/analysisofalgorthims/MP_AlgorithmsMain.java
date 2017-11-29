@@ -5,8 +5,6 @@ package analysisofalgorthims;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 import analysisofalgorthims.Chapter1.Euclid_GCD_HCF;
 import analysisofalgorthims.Chapter1.ListPrimeNos;
 import analysisofalgorthims.Chapter1.MergeSortedList1_1_5;
@@ -27,11 +25,11 @@ public class MP_AlgorithmsMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MatrixMultiplication oMM = new MatrixMultiplication();
+        Fibonacci oFib = new Fibonacci();
+        System.out.println("Fibonacci: " + oFib.calcFibncExtraSpace(50));
+        System.out.println("Looped through: " + oFib.getCount());
+        /*MatrixMultiplication oMM = new MatrixMultiplication();
         oMM.getInputMatrix();
-        /*Fibonacci oFib = new Fibonacci ();
-        System.out.println("Fibonacci: "+ oFib.calcFibonacci (50));
-        System.out.println("Looped through: "+oFib.getCount());
         int[] unsortedArray = {23, 45, 65, 78, 45, 12, 37, 10987, 11, 123, 8, 4, 87, 97, 6, 42, 1, 11111};
         
         UniqueElementsArray oUEA = new UniqueElementsArray (unsortedArray);
