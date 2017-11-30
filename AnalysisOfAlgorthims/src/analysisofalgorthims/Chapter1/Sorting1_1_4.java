@@ -13,7 +13,12 @@ package analysisofalgorthims.Chapter1;
  */
 public class Sorting1_1_4 {
     //int[] unsortedArray = {23, 45, 12, 37, 11};
-
+    
+    /**
+     * Brute force.
+     * Time Complexity: O(n^2)
+     * @param unsortedArray 
+     */
     public void sortArrayBruteForce(int[] unsortedArray) {
         int count = 0;
         boolean arraySorted;
@@ -40,11 +45,58 @@ public class Sorting1_1_4 {
         System.out.println();
         System.out.println("Total number of loops for array length " + aryLen + " is " + count);
         System.out.println("Sorted List:");
-        for (int k = 0; k < aryLen; k++) {
+        for (int k = aryLen-1; k >= 0; k--) {
             //System.out.println("Element of Array at ["+k+"] is "+unsortedArray[k]);
-            System.out.print(unsortedArray[k] + " ");
+            System.out.print(unsortedArray[k] + ", ");
         }
 
         System.out.println();
+    }
+
+    /**
+     * This is 50% efficient that Brute Force. No of swaps were 143 & count was 153.
+     * Time Complexity: O(n^2)
+     * @param unsortedArr
+     */
+    public void selectionSort(int[] unsortedArr) {
+        int count = 0;
+        int arrLen = unsortedArr.length;
+        int min;
+        int swap = 0;
+
+        System.out.println("Count: " + count);
+        for (int k = 0; k < unsortedArr.length; k++) {
+            System.out.print(unsortedArr[k] + " ");
+        }
+        System.out.println("");
+        System.out.println("Array Length: " + arrLen);
+        for (int i = 0; i < arrLen - 1; i++) {
+            min = unsortedArr[i];
+
+            System.out.println("Min Value: " + min);
+
+            for (int j = i + 1; j < arrLen; j++) {
+                count++;
+
+                if (min > unsortedArr[j]) {
+                    unsortedArr[i] = unsortedArr[j];
+                    unsortedArr[j] = min;
+                    min = unsortedArr[i];
+                    swap++;
+                }
+            }
+            System.out.println("Count: " + count);
+            for (int k = 0; k < unsortedArr.length; k++) {
+                System.out.print(unsortedArr[k] + " ");
+            }
+            System.out.println("");
+
+        }
+        System.out.println("No of total Swaps: " + swap);
+        System.out.println("Count: " + count);
+        for (int k = 0; k < unsortedArr.length; k++) {
+            System.out.print(unsortedArr[k] + " ");
+        }
+        System.out.println("");
     }
 }
