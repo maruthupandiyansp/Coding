@@ -28,7 +28,7 @@ public class MP_AlgorithmsMain {
     public static void main(String[] args) {
         Sorting1_1_4 sort = new Sorting1_1_4();
         //sort.selectionSort(unsortedArray);
-        sort.sortArrayBruteForce(unsortedArray);
+        sort.selectionSort(unsortedArray);
         /*Fibonacci oFib = new Fibonacci();
         System.out.println("Fibonacci: " + oFib.calcFibncExtraSpace(50));
         System.out.println("Looped through: " + oFib.getCount());
